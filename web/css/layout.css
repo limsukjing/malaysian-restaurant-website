@@ -1,0 +1,80 @@
+#header {
+    padding-top: 30px;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+}
+
+body #user {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+body #user:hover {
+    color: #897259;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container content {
+    float: left;
+    width: 75%;
+}
+
+.container content #title {
+    font-weight:normal;
+    font-size: 23px;
+    text-align: center;
+    color: #000000;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000000;
+    padding: 7px 20px;
+    margin-left: 3%;
+    margin-top: 0;
+}
+
+.container sidebar {
+    float: right;
+    width: 25%;
+}
+
+.container sidebar #hours {
+    font-weight:normal;
+    font-size: 23px;
+    text-align: center;
+    color: #000000;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000000;
+    padding: 7px 75px;
+    margin-left: 10%;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.container sidebar img {
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 9%
+}
+
+.container sidebar strong {
+    text-align: left;
+    padding: 0 20px 0 20px;
+    margin-left: 15%;
+    font-size: 17px;
+}
+
+.container sidebar strong:hover {
+    color: #897259;
+}
+
+.container sidebar p {
+    text-align: center;
+    padding: 0 40px 0 40px;
+    margin-left: 5%;
+}

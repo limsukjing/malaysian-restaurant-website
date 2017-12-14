@@ -1,0 +1,37 @@
+{% extends '_template.html.twig' %}
+
+{% block signup %}current-page{% endblock %}
+
+{% block style %}
+    @import "/css/signup.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">SIGN UP</h3>
+
+        <p>Be a part of the Tanjung Aru community to receive updates!</p>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processSignup">
+
+            <h2>Create an account</h2>
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+            <br>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="address@example.com">
+            <br>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password">
+            <br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+
+        <p>Already have an account? Login <a href="/index.php?action=login">here</a></p>
+    </content>
+{% endblock %}

@@ -1,0 +1,41 @@
+.container content p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.container content #create {
+    text-align: right;
+    font-size: 18px;
+}
+
+.container content strong {
+    font-size: 18px;
+}
+
+.container content strong:hover {
+    color: #897259;
+}
+
+.container content #image {
+    margin-left: 60px;
+}
+
+.container content #menu {
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid #BA976D;
+    float: left;
+    margin-left: 65px;
+    margin-bottom: 30px;
+}
+
+.container content a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: #8FBC8F;
+ }
+
+.container content a:visited {
+    color: #CD5C5C;
+}

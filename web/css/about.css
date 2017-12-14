@@ -1,0 +1,19 @@
+.container content p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.container content strong {
+    font-size: 18px;
+}
+
+.container content a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: #8FBC8F;
+}
+
+.container content a:visited {
+    color: #CD5C5C;
+}

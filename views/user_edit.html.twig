@@ -1,0 +1,38 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/user_edit.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">EDIT USER #{{ user.id }}</h3>
+
+        <br>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processUserEdit">
+
+            <br><br>
+            <label>Id</label>
+            <input type="text" name="id" value="{{ user.id }}" readonly>
+
+            <br>
+            <label>Username</label>
+            <input type="text" name="username" value="{{ user.username }}">
+
+            <br>
+            <label>Email</label>
+            <input type="text" name="email" value="{{ user.email }}">
+
+            <br>
+            <label>Password</label>
+            <input type="text" name="password" value="{{ user.password }}">
+
+            <br>
+            <input type="submit" value="Update">
+        </form>
+
+        <br>
+    </content>
+{% endblock %}

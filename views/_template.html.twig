@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+        @import "/css/nav.css";
+        @import "/css/layout.css";
+        {% block style %}{% endblock %}
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="/index.php?action=about" class="nav-left">ABOUT US</a>
+        <a href="/index.php?action=menu" id="{% block menu %}{% endblock %}" class="nav-left">MENU</a>
+        {% if username == 'admin' %}
+        <a href="/index.php?action=user" id="{% block user %}{% endblock %}" class="nav-left">USER</a>
+        {% endif %}
+        <a href="/index.php?action=signup" id="{% block signup %}{% endblock %}" class="nav-left">SIGN UP</a>
+        <a href="/index.php?action=login" id="{% block login %}{% endblock %}" class="nav-left">LOGIN</a>
+
+        <img src="/images/nav_instagram.png" alt="instagram" class="nav-right">
+        <img src="/images/nav_facebook.png" alt="facebook" class="nav-right">
+        <img src="/images/nav_twitter.png" alt="twitter" class="nav-right">
+        <a href="mailto:B00100201@student.itb.ie"><img src="/images/nav_mail.png" alt="e-mail" class="nav-right"></a>
+    </div>
+
+    <div id="header">
+        <center>
+            <a href="/index.php?action=home"><img src="/images/header.png" alt="Tanjung Aru" border="0"></a>
+        </center>
+    </div>
+
+    {% if isLoggedIn == true %}
+        <p id="user">Hello, {{username}}! Logout <a href="/index.php?action=logout">here</a></p>
+    <br>
+    {% endif %}
+
+    <div class="container">
+        {% block main %}
+        {% endblock %}
+
+        <sidebar>
+            <h3 id="hours">OPENING HOURS</h3>
+            <img src="/images/sidebar_hours.png" alt="Opening Hours">
+            <strong>MON - THURS</strong>
+            <p>12:00 - 22:00</p>
+            <strong>FRIDAY</strong>
+            <p>12:00 - 22:30</p>
+            <strong>SATURDAY</strong>
+            <p>12:00 - 23:00</p>
+            <strong>SUNDAY & PUBLIC HOLIDAYS</strong>
+            <p>12:00 - 21:30</p>
+        </sidebar>
+    </div>
+</body>
+
+<footer>
+    <p>&copy; 2017 - Tanjung Aru | Malaysian Restaurant. All Rights Reserved. <a href="/index.php?action=sitemap">Sitemap</a></p>
+</footer>
+</html>

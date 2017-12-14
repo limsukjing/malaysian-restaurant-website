@@ -1,0 +1,27 @@
+.container content h4 {
+    font-weight:normal;
+    text-align: right;
+}
+
+.container content h4:hover {
+    color: #897259;
+}
+
+.container content p {
+    text-align: center;
+}
+
+.container content p:hover {
+    color: #897259;
+}
+
+.container content a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: #8FBC8F;
+}
+
+.container content a:visited {
+    color: #CD5C5C;
+}

@@ -1,0 +1,35 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/user_edit.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">CREATE USER</h3>
+
+        <br>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processUserCreate">
+
+
+            <br><br>
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+
+            <br><br>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Enter email">
+
+            <br><br>
+            <label>Password</label>
+            <input type="text" name="password" placeholder="Enter password">
+
+            <br>
+            <input type="submit" value="Create">
+        </form>
+
+        <br>
+    </content>
+{% endblock %}

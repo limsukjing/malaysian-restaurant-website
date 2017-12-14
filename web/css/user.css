@@ -1,0 +1,36 @@
+.container content p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.container content #create {
+    text-align: right;
+    font-size: 18px;
+}
+
+.container content strong {
+    font-size: 18px;
+}
+
+.container content strong:hover {
+    color: #897259;
+}
+
+.container content #userList {
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #BA976D;
+    margin-left: 230px;
+    margin-bottom: 30px;
+}
+
+.container content a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: #8FBC8F;
+}
+
+.container content a:visited {
+    color: #CD5C5C;
+}

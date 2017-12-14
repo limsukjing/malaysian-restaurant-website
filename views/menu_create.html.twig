@@ -1,0 +1,34 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/menu_edit.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">CREATE MENU ITEM</h3>
+
+        <br>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processMenuCreate">
+
+            <br>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter item name">
+            <br>
+
+            <label>Price</label>
+            <input type="text" name="price" placeholder="Enter item price">
+            <br>
+
+            <label>Description</label>
+            <textarea rows="8" cols="26" placeholder="Enter item description" name="description"></textarea>
+            <br>
+
+            <input type="submit" value="Create">
+        </form>
+
+        <br>
+    </content>
+{% endblock %}

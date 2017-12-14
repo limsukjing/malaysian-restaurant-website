@@ -1,0 +1,43 @@
+.container content form {
+    text-align: center;
+    width: 50%;
+    padding-bottom: 23px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #D3D3D3;
+    box-shadow: 1px 2px 4px 0 #D3D3D3;
+    background: url(../images/user_background.jpg) no-repeat;
+}
+
+.container content label {
+    font-size: 18px;
+    display: inline-block;
+    width: 125px;
+    text-align: right;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.container content input {
+    color: #5F5F5F;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #D3D3D3;
+    box-shadow: 1px 2px 4px 0 #D3D3D3;
+}
+
+.container content input[type=submit] {
+    background-color: #6CAEE0;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    margin-top: 20px;
+    border: 0;
+}
+
+.container content input[type=submit]:focus {
+    background-color: #5F5F5F;
+    border: 0;
+}
+
+
+

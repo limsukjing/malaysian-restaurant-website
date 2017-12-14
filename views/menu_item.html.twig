@@ -1,0 +1,21 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/menu_item.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">{{ menuItem.name }}</h3>
+
+        <h4><a href="/index.php?action=menu">Back to menu page</a></h4>
+
+        <br>
+        <center>
+            <img src="/images/menu_item.jpg" alt="cutlery" border="0">
+        </center>
+        <br>
+
+        <p><Strong>Description: </Strong>{{ menuItem.description }}</p>
+    </content>
+{% endblock %}

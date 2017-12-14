@@ -1,0 +1,22 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/home.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">EXPLORE</h3>
+
+        <center>
+            <a href="/index.php?action=about"><img src="/images/home_1.jpg" alt="about us" border="0"></a>
+            <a href="/index.php?action=menu"><img src="/images/home_2.jpg" alt="menu" border="0"></a>
+            {% if username == 'admin' %}
+            <a href="/index.php?action=user"><img src="/images/home_5.jpg" alt="user" border="0"></a>
+            {% endif %}
+            <a href="/index.php?action=signup"><img src="/images/home_3.jpg" alt="signup" border="0"></a>
+            <a href="/index.php?action=login"><img src="/images/home_4.jpg" alt="login" border="0"></a>
+        </center>
+    </content>
+{% endblock %}
+

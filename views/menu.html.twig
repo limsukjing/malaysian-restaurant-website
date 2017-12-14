@@ -1,0 +1,43 @@
+{% extends '_template.html.twig' %}
+
+{% block menu %}current-page{% endblock %}
+
+{% block style %}
+    @import "/css/menu.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">MENU</h3>
+
+        {% if username == 'admin' or username == 'staff' %}
+        <p id="create">New menu item coming soon? Create <a href="/index.php?action=menuItemCreate">here</a>.</p>
+        {% endif %}
+        <br>
+
+        <div id="image">
+            <img src="/images/menu_satay.jpg" alt="satay" border="0">
+            <img src="/images/menu_popiah.jpg" alt="satay" border="0">
+            <img src="/images/menu_nasilemak.png" alt="nasilemak" border="0">
+            <img src="/images/menu_laksa.jpg" alt="laksa" border="0">
+            <img src="/images/menu_abc.jpg" alt="abc" border="0">
+        </div>
+        <br>
+        <br>
+
+        {% for menuItem in menuItems %}
+            <div id="menu">
+                <p>{{ menuItem.id }}</p>
+                <hr>
+                <p><strong>Name:</strong> {{ menuItem.name }}</p>
+                <p><strong>Price:</strong> &euro;{{ menuItem.price }}</p>
+                <p><a href="/index.php?action=menuItem&id={{ menuItem.id }}">Click to view full item description</a></p>
+                {% if username == 'admin' or username == 'staff' %}
+                <p><a href="/index.php?action=menuItemEdit&id={{ menuItem.id }}">Edit item</a> | <a href="/index.php?action=menuItemDelete&id={{ menuItem.id }}">Delete item</a></p>
+                {% endif %}
+            </div>
+        {% endfor %}
+
+        <br>
+    </content>
+{% endblock %}

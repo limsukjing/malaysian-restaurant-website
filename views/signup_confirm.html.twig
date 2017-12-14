@@ -1,0 +1,36 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/signup_confirm.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">USER SIGN UP</h3>
+
+        <h4><a href="/index.php?action=login">Go to login page</a></h4>
+
+        <br>
+        <center>
+            <img src="/images/user_edit.png" alt="create" border="0">
+        </center>
+        <br>
+
+        <p>User registered successfully!</p>
+
+        <form>
+            <fieldset>
+                <legend>Data received</legend>
+
+                <br>
+                <p><strong>Name: </strong>{{ newUsername }}</p>
+
+                <br>
+                <p><strong>Email: </strong>{{ email }}</p>
+
+                <br>
+                <p><strong>Password: </strong>{{ password }}</p>
+            </fieldset>
+        </form>
+    </content>
+{% endblock %}

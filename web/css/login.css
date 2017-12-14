@@ -1,0 +1,73 @@
+.container content p {
+    font-weight:normal;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.container content p:hover {
+    color: #897259;
+}
+
+.container content h2 {
+    font-weight: normal;
+    color: #4C565E;
+    font-size: 29px;
+    padding-top: 20px;
+}
+
+.container content a {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: #8FBC8F;
+}
+
+.container content a:visited {
+    color: #CD5C5C;
+}
+
+.container content form {
+    text-align: center;
+    width: 60%;
+    padding-bottom: 23px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid #D3D3D3;
+    box-shadow: 1px 2px 4px 0 #D3D3D3;
+    background: url(../images/content_background.jpg) no-repeat;
+}
+
+.container content label {
+    font-size: 20px;
+    display: inline-block;
+    width: 125px;
+    text-align: right;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.container content input {
+    color: #5F5F5F;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border: 1px solid #D3D3D3;
+    box-shadow: 1px 2px 4px 0 #D3D3D3;
+}
+
+.container content input[type=submit] {
+    background-color: #6CAEE0;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    margin-top: 35px;
+    border: 0;
+}
+
+.container content input[type=submit]:focus {
+    background-color: #5F5F5F;
+    border: 0;
+}
+
+
+

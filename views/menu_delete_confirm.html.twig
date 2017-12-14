@@ -1,0 +1,21 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/menu_confirm.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">DELETE MENU ITEM</h3>
+
+        <h4><a href="/index.php?action=menu">Back to menu page</a></h4>
+
+        <br>
+        <center>
+            <img src="/images/menu_delete.png" alt="delete" border="0">
+        </center>
+        <br>
+
+        <p>Item deleted successfully!</p>
+    </content>
+{% endblock %}

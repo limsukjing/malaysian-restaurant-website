@@ -1,0 +1,33 @@
+{% extends '_template.html.twig' %}
+
+{% block login %}current-page{% endblock %}
+
+{% block style %}
+    @import "/css/login.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">LOGIN</h3>
+
+        <p>Please login to get access!</p>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processLogin">
+
+            <h2>Administrator/Staff</h2>
+
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username">
+            <br>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password">
+            <br>
+
+            <input type="submit" value="Login">
+        </form>
+        <br>
+
+    </content>
+{% endblock %}

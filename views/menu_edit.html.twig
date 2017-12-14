@@ -1,0 +1,38 @@
+{% extends '_template.html.twig' %}
+
+{% block style %}
+    @import "/css/menu_edit.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">EDIT MENU ITEM #{{ menuItem.id }}</h3>
+
+        <br>
+
+        <form method="post" action="index.php">
+            <input type="hidden" name="action" value="processMenuEdit">
+
+            <br>
+            <label>Id</label>
+            <input type="text" name="id" value="{{ menuItem.id }}" readonly>
+            <br>
+
+            <label>Name</label>
+            <input type="text" name="name" value="{{ menuItem.name }}">
+            <br>
+
+            <label>Price</label>
+            <input type="text" name="price" value="{{ menuItem.price }}">
+            <br>
+
+            <label>Description</label>
+            <textarea rows="5" cols="26" value="{{ menuItem.description }}" name="description"></textarea>
+            <br>
+
+            <input type="submit" value="Update">
+        </form>
+
+        <br>
+    </content>
+{% endblock %}

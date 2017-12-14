@@ -1,0 +1,29 @@
+{% extends '_template.html.twig' %}
+
+{% block user %}current-page{% endblock %}
+
+{% block style %}
+    @import "/css/user.css";
+{% endblock %}
+
+{% block main %}
+    <content>
+        <h3 id="title">USER</h3>
+
+        <p id="create">Create new user <a href="/index.php?action=userCreate">here</a></p>
+        <br>
+
+        {% for user in users %}
+            <div id="userList">
+                <p>{{ user.id }}</p>
+                <hr>
+                <p><strong>Name:</strong> {{ user.username }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <p><strong>Password:</strong> {{ user.password }}</p>
+                <p><a href="/index.php?action=userEdit&id={{ user.id }}">Edit user</a> | <a href="/index.php?action=userDelete&id={{ user.id }}">Delete user</a></p>
+            </div>
+        {% endfor %}
+
+        <br>
+    </content>
+{% endblock %}
