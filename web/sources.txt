@@ -53,19 +53,19 @@ http://files.kitchenbowl.com/recipe/J6ZJ5yYsNk/fresh-spring-rolls-popiah.jpg
 menu_satay.jpg
 https://images.ricardocuisine.com/services/recipes/1074x1074_satay-cover3.jpg
 
-nav_facebook
+nav_facebook.png
 https://www.iconfinder.com/icons/2657542/facebook_media_social_website_icon#size=128
 
-nav_instagram
+nav_instagram.png
 https://www.iconfinder.com/icons/2657553/instagram_media_social_website_icon#size=128
 
-nav_mail
+nav_mail.png
 https://static1.squarespace.com/static/5383abd0e4b037295d995596/t/53f8ca63e4b0eafa4730763a/1408813668087/?format=300w
 
-nav_twitter
+nav_twitter.png
 https://www.iconfinder.com/icons/2657545/media_social_twitter_website_icon#size=128
 
-sidebar_hours
+sidebar_hours.png
 https://mars-metcdn-com.global.ssl.fastly.net/content/uploads/sites/71/2016/02/11122430/open-for-business1.png
 
 user_background.jpg
